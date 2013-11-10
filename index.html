@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Convert Font-Awesome Icons to PNG</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href="css/colpick.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel icon-panel">
+                    <div class="panel-heading container">
+                        <h3 class="panel-title">Choose Your Icon</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row" id="icons"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Select Color &amp; Size</h3>
+                        </div>
+                        <div class="panel-body row">
+                            <div id="colorpicker" class="col-sm-8"></div>
+                            <div id="sizepicker" class="col-sm-4"><input type="number" class="form-control" min="1" value="20"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Download Image</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-4" style="text-align: center;">
+                                    <canvas id="canvas"></canvas>
+                                </div>
+                                <div class="col-sm-8 form-horizontal">
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Base64</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="base64" placeholder="Base64">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">PNG</label>
+                                        <div class="col-sm-10">
+                                            <a href="#" type="button" download="#" id="download" class="btn btn-default btn-block">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="js/colpick.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
