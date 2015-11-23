@@ -67,7 +67,7 @@ $('.row > div').each(function(){
 		context.webkitImageSmoothingEnabled = true;
 		context.clearRect ( 0 , 0 , size, size );
 		context.font = size+'px FontAwesome';
-		context.fillStyle = color;
+		context.fillStyle = "#" + color;
 		context.textAlign = 'center';
 		context.textBaseline = 'middle';
 		context.fillText(String.fromCharCode('0x'+iconData[icon]), size/2, size/2, size);
